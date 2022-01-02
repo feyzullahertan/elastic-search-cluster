@@ -12,11 +12,18 @@ Don't you know Elastic Search? Lets jump to [Elastic Search 101](https://towards
 ## Installation
 
 
-**Ubuntu** image is used as Linux.
+**CentOS** image is used as Linux.
 
 The example was made on **Google Cloud.**
 
 You can do it if you allocate **2 GB** to each node on your own computer.
 
+We are click Compute Engine -> VM Instance side.
 
-selam
+Create new VM Instance name is Elastic-Master for node.
+
+>> The instances we will install must be in the same region and zone.
+>> The instance will be E2 Series and machine type is e2 medium(2 vCPU, 4GB Memory).
+>> Change boot disk with CentOS. Version is CentOS 7. Size is 20 GB.
+>> Check is Allow HTTP Trafic and Allow HTTPS Trafic in Firewall settings.
+>> 
