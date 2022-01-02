@@ -19,3 +19,4 @@ The example was made on **Google Cloud.**
 You can do it if you allocate **2 GB** to each node on your own computer.
 
 
+selam
