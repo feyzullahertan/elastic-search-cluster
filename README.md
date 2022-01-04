@@ -18,7 +18,7 @@ Don't you know Elastic Search? Lets jump to [Elastic Search 101](https://towards
 
 <!--te-->
 
-### Creating VM Instances
+### Create VM Instances
 
 **CentOS** image is used as Linux.
 
