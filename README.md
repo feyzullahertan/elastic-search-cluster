@@ -21,7 +21,6 @@ You can do it if you allocate **2 GB** to each node on your own computer.
 
 We are click Compute Engine -> VM Instance side.
 
-Create new VM Instance name is Elastic-Master for node.
 Requirements before creating VM Instance
 
 *>> The instances we will install must be in the same region and zone.*
@@ -32,6 +31,11 @@ Requirements before creating VM Instance
 
 *>> Check is Allow HTTP Trafic and Allow HTTPS Trafic in Firewall settings.*
 
+Our first instance names "elastic-master" which is my master node, then I created 2 data node instances. We created 3 VM Instances in total.
+
+*>> Our data nodes named "elastic-data-1" and"elastic-data-2".*
+
+![elastic](https://user-images.githubusercontent.com/37136204/148647015-9e1f08f5-fb6b-415d-9be9-cb9fc6df0ccd.PNG)
 
 
 
