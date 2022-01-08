@@ -10,13 +10,6 @@ Don't you know Elastic Search? Lets jump to [Elastic Search 101](https://towards
 
 
 ## Installation
-### Table of contents
-=================
-
-<!--ts-->
-   * [Create VM Instances](#createvminstances)
-
-<!--te-->
 
 ### Create VM Instances
 
@@ -68,11 +61,11 @@ Requirements before creating VM Instance
 
 
 
-### TODO
+## TODO
    - [ ] Youtube Video
    - [ ] Add Kibana
 
 
-### Authors
+## Authors
 Thank you very much to my beloved wife for her support. [@busetorunlarertan](https://github.com/busetorunlarertan)
 
