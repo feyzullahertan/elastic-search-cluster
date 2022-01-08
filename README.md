@@ -37,6 +37,12 @@ Our first instance names "elastic-master" which is my master node, then I create
 
 ![elastic](https://user-images.githubusercontent.com/37136204/148647015-9e1f08f5-fb6b-415d-9be9-cb9fc6df0ccd.PNG)
 
+VM Instances are completed! 
+
+### Installation Elasticsearch
+
+
+
 
 
 
