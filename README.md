@@ -23,17 +23,17 @@ We are click Compute Engine -> VM Instance side.
 
 Requirements before creating VM Instance
 
-*>> The instances we will install must be in the same region and zone.*
+**>> The instances we will install must be in the same region and zone.**
 
-*>> The instance will be E2 Series and machine type is e2 medium(2 vCPU, 4GB Memory).*
+**>> The instance will be E2 Series and machine type is e2 medium(2 vCPU, 4GB Memory).**
 
-*>> Change boot disk with CentOS. Version is CentOS 7. Size is 20 GB.*
+**>> Change boot disk with CentOS. Version is CentOS 7. Size is 20 GB.**
 
-*>> Check is Allow HTTP Trafic and Allow HTTPS Trafic in Firewall settings.*
+**>> Check is Allow HTTP Trafic and Allow HTTPS Trafic in Firewall settings.**
 
 Our first instance names "elastic-master" which is my master node, then I created 2 data node instances. We created 3 VM Instances in total.
 
-*>> Our data nodes named "elastic-data-1" and"elastic-data-2".*
+**>> Our data nodes named "elastic-data-1" and"elastic-data-2".**
 
 ![elastic](https://user-images.githubusercontent.com/37136204/148647015-9e1f08f5-fb6b-415d-9be9-cb9fc6df0ccd.PNG)
 
@@ -41,6 +41,20 @@ VM Instances are completed!
 
 ### Installation Elasticsearch
 
+[Download Elasticsearch](https://towardsdatascience.com/an-overview-on-elasticsearch-and-its-usage-e26df1d1d24a)
+
+**Choose Linuxx86_64**
+
+**>> Get link at "Download Linux86_64". **
+
+And lets go to VM Intances with SSH. You can switch to root user. That's how I preferred it.
+
+```bash
+  yum install wget
+```
+```bash
+  wget elastic_search_download_link -y
+```
 
 
 
@@ -65,10 +79,9 @@ VM Instances are completed!
 
 
 
+**Elasticsearch is live !**
 
-
-
-
+<img src="https://c.tenor.com/qdg13PqYbxMAAAAM/yes-baby.gif"  width="300" height="250">
 
 
 ## TODO
