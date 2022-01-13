@@ -1,4 +1,4 @@
-# Elastic Search Cluster
+# Elastic Search Cluster + Security Comfiguration
 [![](https://img.shields.io/badge/Documantation-1.0-brightgreen)]()
 
 ![App Screenshot](https://www.ozgurozkok.com/wp-content/uploads/2019/12/elasticsearch.png)
@@ -45,19 +45,36 @@ VM Instances are completed!
 
 **Choose Linuxx86_64**
 
-**>> Get link at "Download Linux86_64". **
+**>> Get link at 'Download Linux86_64'.**
 
 And lets go to VM Intances with SSH. You can switch to root user. That's how I preferred it.
 
 ```bash
   yum install wget
+  yum install nano
 ```
 ```bash
-  wget elastic_search_download_link -y
+  wget <elastic_search_download_link> -y
+```
+```bash
+  rpm -ivh <elasticsearch_file.rpm>
 ```
 
+We must do same action other instances (which is elastic-data-1 and elastic-data-2)
 
+```bash
+  cd /etc/elasticsearch
+  ls (You can see elasticsearch.yml)
+  nano elasticsearch.yml
+```
+First I at Master VM Instance
+You can see everthing is comment mode. We need to delete "#" and configuration some lines:
 
+```bash
+  cluster-name
+  node.name= master
+  
+```
 
 
 
