@@ -1,4 +1,4 @@
-# Elastic Search Cluster + Security Comfiguration
+# Elastic Search Cluster + Security Configuration
 [![](https://img.shields.io/badge/Documantation-1.0-brightgreen)]()
 
 ![App Screenshot](https://www.ozgurozkok.com/wp-content/uploads/2019/12/elasticsearch.png)
