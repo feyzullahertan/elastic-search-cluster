@@ -72,8 +72,17 @@ You can see everthing is comment mode. We need to delete "#" and configuration s
 
 ```bash
   cluster-name
-  node.name= master
+  node.name : master
+  node.data : false
+  node.ingest : false
   
+   ---- Network ----
+  network.host :  0.0.0.0
+  http.port : 9200
+  
+  ---- Discovery ----
+  
+  discovery.seed_hosts : 
 ```
 
 
