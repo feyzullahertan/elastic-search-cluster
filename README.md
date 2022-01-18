@@ -112,8 +112,32 @@ At the bottom of the document we write:
   xpack.security.transport.ssl.truststore.path: /usr/share/elastic-stack-ca.p12
 ```
 
+We created certification (elastic-stack-ca.p12), this certification must be have other VM Instances (elastic-data-1 & elastic-data-2).
+If they do not have this certification, **your configuration will not run.**
 
+How to move elastic-stack-ca.p12 file to other instances?
 
+1) Lets move Cloud Storage and create bucket.
+2) Open elastic-master's terminal 
+3)
+  ```bash
+  gcloud auth login  // autorize your GCP account
+  gsutil cp elastic-stack-ca.p12 gs://your_bucket_name
+  ```
+  
+4) Open elastic-data-1 & elastic-data-2's terminal
+5) 
+  ```bash
+  gsutil cp gs://your_bucket_name/elastic-stack-ca.p12 /usr/share/elasticsearch/
+  ```
+  
+6)This 2 command must do all of VM Instances.
+  ```bash
+  chmod 660 elastic-stack-ca.p12
+  chown root:elasticsearch elastic-stack-ca.p12
+  ```
+ 
+  ### Configuration "HTTPS" 
 
 
 
