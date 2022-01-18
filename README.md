@@ -137,11 +137,31 @@ How to move elastic-stack-ca.p12 file to other instances?
   chown root:elasticsearch elastic-stack-ca.p12
   ```
  
-  ### Configuration "HTTPS" 
-
-
-
-
+ ### Configuration "HTTPS"
+ ```bash
+  cd /usr/share/elasticsearch/
+  ./bin/elasticsearch-cerutil http
+  ```
+ Do not create CSR file, because we have CA file.
+ ```bash
+ CA Path:/usr/share/elasticsearh/elastic-stack-ca.p12
+ Generate cerfitication per node? : No
+  ```
+  Now, It will want hostnames. 
+  If you do not know hostname and internal hostname, you can write like this at VM Instances's terminals:
+ ```bash
+ hostname
+ hostname -f
+  ```
+ ```bash
+ elastic-master
+ elastic-master_bla_bla_bla
+ .
+ ..
+ ...
+  ```
+ 
+  
 
 
 
