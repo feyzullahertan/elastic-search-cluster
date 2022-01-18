@@ -112,7 +112,7 @@ You can see everthing is comment mode. We need to delete "#" and configuration s
 
 ## TODO
    - [ ] Youtube Video
-   - [ ] Add Kibana
+
 
 
 ## Authors
