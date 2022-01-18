@@ -59,6 +59,7 @@ And lets go to VM Intances with SSH. You can switch to root user. That's how I p
 ```bash
   rpm -ivh <elasticsearch_file.rpm>
 ```
+### Configuration
 
 We must do same action other instances (which is elastic-data-1 and elastic-data-2)
 
@@ -81,13 +82,31 @@ You can see everthing is comment mode. We need to delete "#" and configuration s
   http.port : 9200
   
   ---- Discovery ----
+  Make sure that VM Instances are same regions.
+  discovery.seed_hosts : ["elastic-master's internal IP","elastic-data-1's internal IP", "elastic-data-2's internal IP"]
+  cluster.initial_master_nodes: ["elastic-master's internal IP"]
   
-  discovery.seed_hosts : 
 ```
 
+### Security (xpack) Configuration with SSL
 
 
-
+```bash
+  cd /usr/share/elasticsearch/
+  ./bin/elasticsearch-certutil ca
+  Enter + define some password what you want. (but dont forget,it will work for us)
+  You can see "elastic-stack-ca.p12"
+```
+Lets go elasticsearch.yml file.
+```bash
+  cd /etc/elasticsearch/
+  nano elasticsearch.yml
+```
+At the bottom of the document we write:
+```bash
+  xpack.security.transport.ssl.enabled: true
+  
+```
 
 
 
