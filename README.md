@@ -144,7 +144,7 @@ How to move elastic-stack-ca.p12 file to other instances?
   ```
  Do not create CSR file, because we have CA file.
  ```bash
- CA Path:/usr/share/elasticsearh/elastic-stack-ca.p12
+ CA Path:/usr/share/elasticsearch/elastic-stack-ca.p12
  Generate cerfitication per node? : No
   ```
   Now, It will want hostnames. 
@@ -153,14 +153,23 @@ How to move elastic-stack-ca.p12 file to other instances?
  hostname
  hostname -f
   ```
+  You can write hostname names below.
  ```bash
+ localhost
  elastic-master
  elastic-master_bla_bla_bla
  .
  ..
  ...
   ```
- 
+  Then, you must write IP address (which is localhost IP, internal IP
+   ```bash
+ 127.0.0.1
+ .
+ ..
+ ...
+ ....
+  ```
   
 
 
