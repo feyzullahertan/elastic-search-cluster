@@ -162,7 +162,7 @@ How to move elastic-stack-ca.p12 file to other instances?
  ..
  ...
   ```
-  Then, you must write IP address (which is localhost IP, internal IP
+  Then, you must write IP addresses (which is localhost IP, internal IP and External IP)
    ```bash
  127.0.0.1
  .
@@ -170,14 +170,35 @@ How to move elastic-stack-ca.p12 file to other instances?
  ...
  ....
   ```
-  
+ Now, you have "elasticsearch-ssl-http.zip", location is:
+ ```bash
+ usr/share/elasticsearch/elasticsearch-ssl-http.zip
+ unzip elasticsearch-ssl-http.zip
+ ```
+You can see elasticsearch and kibana files. Elasticsearch's file have http.p12 files. We'll send other VM Instances like moving "elastic-stack-ca.p12".
+We need to add a few security parameters to the **elasticsearch.yml** file.
+ ```bash
+cd /etc/elasticsearch/
+nano elasticsearch.yml
+ ```
+
+Add these parameters:
+ ```bash
+xpack.security.http.ssl.enabled: true
+xpack.security.http.ssl.keystore.path:  /usr/share/elasticsearch/elasticsearch/http.p12 //Location of http.p12
+xpack.security.http.ssl.truststore.path:  /usr/share/elasticsearch/elasticsearch/http.p12 //Location of http.p12
+ ```
 
 
-
-
-
-
-
+ ### Running
+```bash
+service elasticsearch start
+```
+When we start to run the service, we can monitor it in the log file.
+```bash
+cd /var/log/elasticsearch/
+tail -100f my-applcation.log
+```
 
 
 
@@ -188,6 +209,8 @@ How to move elastic-stack-ca.p12 file to other instances?
 
 ## TODO
    - [ ] Youtube Video
+   - [ ] Fleet manager
+   - [ ] Kibana
 
 
 
