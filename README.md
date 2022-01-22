@@ -6,7 +6,7 @@
 
 I will show how to install Elastic Search Cluster structure. This repo is first aid kit. :ambulance:
 
-Don't you know Elastic Search? Lets jump to [Elastic Search 101](https://towardsdatascience.com/an-overview-on-elasticsearch-and-its-usage-e26df1d1d24a)
+Don't you know Elastic Search? Lets jump to [Elasticsearch 101](https://towardsdatascience.com/an-overview-on-elasticsearch-and-its-usage-e26df1d1d24a)
 
 
 ## Installation
