@@ -105,6 +105,7 @@ Lets go elasticsearch.yml file.
 ```
 At the bottom of the document we write:
 ```bash
+  xpack.security.enabled : true
   xpack.security.transport.ssl.enabled: true
   xpack.security.transport.ssl.verification_node: certificate
   xpack.security.transport.ssl.client_authentication: required
@@ -211,6 +212,10 @@ curl -XGET 'https://localhost:9200/_cluster/health?pretty' -k
 
 
  ### Add User
+ ```bash
+ cd /usr/share/elasticsearch
+ ./bin/elasticsearch-setup-passwords auto
+```
 
 **Elasticsearch is live !**
 
