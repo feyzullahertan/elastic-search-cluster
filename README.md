@@ -199,8 +199,18 @@ When we start to run the service, we can monitor it in the log file.
 cd /var/log/elasticsearch/
 tail -100f my-applcation.log
 ```
+Finally, you must run other data nodes which is elastic-data-1 and elastic-data-2
+```bash
+service elasticsearch start
+```
+You can send curl if you want to see the health of the system, active nodes and shards.
+```bash
+curl -XGET 'https://localhost:9200/_cluster/health?pretty' -k
+```
+![image](https://user-images.githubusercontent.com/37136204/150630688-8dce0049-9d29-49c1-bbf6-a27d36986c3b.png)
 
 
+ ### Add User
 
 **Elasticsearch is live !**
 
