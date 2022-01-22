@@ -216,7 +216,10 @@ curl -XGET 'https://localhost:9200/_cluster/health?pretty' -k
  cd /usr/share/elasticsearch
  ./bin/elasticsearch-setup-passwords auto
 ```
-
+Take screenshot, do not lose it. You can send curl with your username & paasword.
+```bash
+curl -u username:password -XGET 'https://localhost:9200/_cluster/health?pretty' -k
+```
 **Elasticsearch is live !**
 
 <img src="https://c.tenor.com/qdg13PqYbxMAAAAM/yes-baby.gif"  width="300" height="250">
