@@ -13,6 +13,8 @@ Don't you know Elastic Search? Lets jump to [Elasticsearch 101](https://towardsd
 
 ### Create VM Instances
 
+
+
 **CentOS** image is used as Linux.
 
 The example was made on **Google Cloud.**
