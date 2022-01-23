@@ -41,7 +41,7 @@ VM Instances are completed!
 
 ### Installation Elasticsearch
 
-[Download Elasticsearch](https://towardsdatascience.com/an-overview-on-elasticsearch-and-its-usage-e26df1d1d24a)
+[Download Elasticsearch](https://www.elastic.co/downloads/elasticsearch)
 
 **Choose Linuxx86_64**
 
